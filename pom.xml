@@ -23,7 +23,6 @@
 		<spring-cloud.version>2023.0.4</spring-cloud.version>
 	</properties>
 
-	<!-- ✅ SPRING CLOUD BOM -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -38,32 +37,27 @@
 
 	<dependencies>
 
-		<!-- 🌐 WEB -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- 🧭 EUREKA DISCOVERY CLIENT -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-		<!-- 📊 SPRING BOOT ADMIN CLIENT -->
 		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>spring-boot-admin-starter-client</artifactId>
 			<version>3.3.3</version>
 		</dependency>
 
-		<!-- ❤️ ACTUATOR -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- 🔍 ZIPKIN (MICROMETER TRACING – BOOT 3.x) -->
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-tracing-bridge-brave</artifactId>
@@ -74,7 +68,6 @@
 			<artifactId>zipkin-reporter-brave</artifactId>
 		</dependency>
 
-		<!-- 🔧 DEV TOOLS -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -82,7 +75,6 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- 🧪 TESTING -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
