@@ -9,7 +9,7 @@ spring:
           - http://localhost:1111/
 
 server:
-  port: 2222
+  port: 8080
 
 #eureka:
     #client:

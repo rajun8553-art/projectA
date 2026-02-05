@@ -1,0 +1,20 @@
+apiVersion: projectA/v1
+kind: Deployment
+metadata:
+  name: projectA
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: projectA
+  template:
+    metadata:
+      labels:
+        app: projectA
+    spec:
+      containers:
+        - name: projectA
+          image: localhost:32000/projectA:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
