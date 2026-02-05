@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: projectA
+
+  boot:
+    admin:
+      client:
+        url:
+          - http://localhost:1111/
+
+server:
+  port: 8080
+
+#eureka:
+    #client:
+    #service-url:
+  #defaultZone: http://localhost:8761/
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
